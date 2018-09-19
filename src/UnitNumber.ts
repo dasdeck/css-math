@@ -61,7 +61,7 @@ export default class UnitNumber {
             a = UnitNumber.create(a);
             b = UnitNumber.create(b);
 
-            return (new UnitNumber(a * b, a.unit || b.unit)).toString();
+            return new UnitNumber(a * b, a.unit || b.unit);
         },
 
         div(a, b) {

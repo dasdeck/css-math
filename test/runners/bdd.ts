@@ -1,7 +1,7 @@
 
 import * as suites from '..';
 import {pickBy, isObject, forEach, mapKeys} from 'lodash';
-import UnitNumber from '../../src/UnitNumber';
+import {UnitNumber} from '../../';
 
 /* generates test with bdd style commands */
 

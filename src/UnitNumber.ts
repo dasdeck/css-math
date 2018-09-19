@@ -56,15 +56,15 @@ export default class UnitNumber {
 
     static operations = {
 
-        '*': function mul(a, b) {
+        mul(a, b) {
 
             a = UnitNumber.create(a);
             b = UnitNumber.create(b);
 
-            return new UnitNumber(a * b, a.unit || b.unit);
+            return (new UnitNumber(a * b, a.unit || b.unit)).toString();
         },
 
-        '/': function div(a, b) {
+        div(a, b) {
 
             a = UnitNumber.create(a);
             b = UnitNumber.create(b);
@@ -72,7 +72,7 @@ export default class UnitNumber {
             return new UnitNumber(a / b, a.unit || b.unit);
         },
 
-        '+': function add(a, b) {
+        add(a, b) {
 
             a = UnitNumber.create(a);
             b = UnitNumber.create(b);
@@ -80,7 +80,7 @@ export default class UnitNumber {
             return new UnitNumber(a + b, a.unit || b.unit);
         },
 
-        '-': function sub(a, b) {
+        sub(a, b) {
 
             a = UnitNumber.create(a);
             b = UnitNumber.create(b);
